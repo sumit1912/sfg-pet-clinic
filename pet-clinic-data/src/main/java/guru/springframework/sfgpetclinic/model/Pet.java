@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Pet extends BaseEntity {
     private PetType petType;
-    private Pet owner;
+    private Pet pet;
     private LocalDate birthDate;
 
     public PetType getPetType() {
@@ -16,11 +16,11 @@ public class Pet extends BaseEntity {
     }
 
     public Pet getPet() {
-        return owner;
+        return pet;
     }
 
     public void setPet(Pet owner) {
-        this.owner = owner;
+        this.pet = owner;
     }
 
     public LocalDate getBirthDate() {
